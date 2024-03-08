@@ -40,6 +40,16 @@
 
 ## Usage
 
+### p6df-redis:
+
+#### p6df-redis/init.zsh:
+
+- p6df::modules::redis::deps()
+- p6df::modules::redis::external::brew()
+- p6df::modules::redis::langs()
+
+
+
 ## Author
 
 Philip M . Gollucci <pgollucci@p6m7g8.com>
