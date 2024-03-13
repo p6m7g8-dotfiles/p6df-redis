@@ -60,7 +60,7 @@ p6df::modules::redis::langs() {
 p6df::modules::redis::aws::token::get() {
   local group_id="$1"
   local user_id="$2"
-  local region="${3:-$AWS_DEFAULT_REGION}"
+  local region="${3:-$AWS_REGION}"
 
   local token=$(
     p6_run_dir "$P6_DFZ_SRC_DIR/aws-samples/elasticache-iam-auth-demo-app" \
