@@ -44,10 +44,10 @@
 
 #### p6df-redis/init.zsh:
 
-- p6df::modules::redis::aws::token::get(group_id, user_id, [region=$AWS_DEFAULT_REGION])
 - p6df::modules::redis::deps()
 - p6df::modules::redis::external::brew()
 - p6df::modules::redis::langs()
+- str token = p6df::modules::redis::aws::token::get(group_id, user_id, [region=$AWS_REGION])
 
 
 

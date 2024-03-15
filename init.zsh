@@ -47,14 +47,17 @@ p6df::modules::redis::langs() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::redis::aws::token::get(group_id, user_id, [region=$AWS_DEFAULT_REGION])
+# Function: str token = p6df::modules::redis::aws::token::get(group_id, user_id, [region=$AWS_REGION])
 #
 #  Args:
 #	group_id -
 #	user_id -
-#	OPTIONAL region - [$AWS_DEFAULT_REGION]
+#	OPTIONAL region - [$AWS_REGION]
 #
-#  Environment:	 AWS_DEFAULT_REGION IAMA
+#  Returns:
+#	str - token
+#
+#  Environment:	 AWS_REGION IAMA P6_DFZ_SRC_DIR
 #>
 ######################################################################
 p6df::modules::redis::aws::token::get() {
