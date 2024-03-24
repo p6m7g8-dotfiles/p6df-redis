@@ -10,8 +10,7 @@
   - [Summary](#summary)
   - [Contributing](#contributing)
   - [Code of Conduct](#code-of-conduct)
-  - [Changes](#changes)
-    - [Usage](#usage)
+  - [Usage](#usage)
   - [Author](#author)
 
 ### Badges
@@ -34,11 +33,13 @@
 
 - [Code of Conduct](https://github.com/p6m7g8/.github/blob/master/CODE_OF_CONDUCT.md)
 
-## Changes
-
-- [Change Log](CHANGELOG.md)
-
 ## Usage
+
+
+### Aliases
+
+
+### Functions
 
 ### p6df-redis:
 
@@ -46,11 +47,26 @@
 
 - p6df::modules::redis::deps()
 - p6df::modules::redis::external::brew()
+- p6df::modules::redis::init(_module, dir)
 - p6df::modules::redis::langs()
+
+
+### aws:
+
+#### aws/token.sh:
+
 - str token = p6df::modules::redis::aws::token::get(group_id, user_id, [region=$AWS_REGION])
 
 
 
+## Hier
+```text
+.
+└── aws
+    └── token.sh
+
+2 directories, 1 file
+```
 ## Author
 
 Philip M . Gollucci <pgollucci@p6m7g8.com>
