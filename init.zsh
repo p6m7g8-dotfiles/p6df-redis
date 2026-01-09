@@ -38,8 +38,19 @@ p6df::modules::redis::external::brew() {
 ######################################################################
 p6df::modules::redis::langs() {
 
-  p6_run_dir "$P6_DFZ_SRC_DIR/aws-samples/elasticache-iam-auth-demo-app" "mvn clean"
-  p6_run_dir "$P6_DFZ_SRC_DIR/aws-samples/elasticache-iam-auth-demo-app" "mvn verify"
+  p6_run_dir "$P6_DFZ_SRC_DIR/aws-samples/elasticache-iam-auth-demo-app" "_redis_iam_build"
+
+  p6_return_void
+}
+
+_redis_iam_build() {
+
+  jenv local 17
+  jenv enable-plugin maven
+  jenv rehash
+
+  mvn clean
+  mvn verify
 
   p6_return_void
 }
