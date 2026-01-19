@@ -12,7 +12,7 @@
 #  Returns:
 #	str - token
 #
-#  Environment:	 AWS_REGION IAMA P6_DFZ_SRC_DIR
+#  Environment:	 AWS_REGION P6_DFZ_SRC_DIR
 #>
 ######################################################################
 p6df::modules::redis::aws::token::get() {
