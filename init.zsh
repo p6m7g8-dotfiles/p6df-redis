@@ -23,7 +23,7 @@ p6df::modules::redis::deps() {
 ######################################################################
 p6df::modules::redis::external::brew() {
 
-  p6df::modules::homebrew::cli::brew::install redis
+  p6df::core::homebrew::cli::brew::install redis
 
   p6_return_void
 }
