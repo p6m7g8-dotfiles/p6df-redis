@@ -36,6 +36,10 @@ TODO: Add a short summary of this module.
 ##### p6df-redis/lib/aws/token.sh
 
 - `str token = p6df::modules::redis::aws::token::get(group_id, user_id, [region=$AWS_REGION])`
+  - Args:
+    - group_id - 
+    - user_id - 
+    - OPTIONAL region - [$AWS_REGION]
 
 #### p6df-redis
 
@@ -44,6 +48,9 @@ TODO: Add a short summary of this module.
 - `p6df::modules::redis::deps()`
 - `p6df::modules::redis::external::brew()`
 - `p6df::modules::redis::init(_module, dir)`
+  - Args:
+    - _module - 
+    - dir - 
 - `p6df::modules::redis::langs()`
 
 ## Hierarchy
