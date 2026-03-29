@@ -17,11 +17,11 @@ p6df::modules::redis::deps() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::redis::external::brew()
+# Function: p6df::modules::redis::external::brews()
 #
 #>
 ######################################################################
-p6df::modules::redis::external::brew() {
+p6df::modules::redis::external::brews() {
 
   p6df::core::homebrew::cli::brew::install redis
 
