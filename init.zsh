@@ -58,19 +58,15 @@ _redis_iam_build() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::redis::init(_module, dir)
+# Function: words redis $REDIS_URL = p6df::modules::redis::profile::mod()
 #
-#  Args:
-#	_module -
-#	dir -
+#  Returns:
+#	words - redis $REDIS_URL
 #
+#  Environment:	 REDIS_URL
 #>
 ######################################################################
-p6df::modules::redis::init() {
-  local _module="$1"
-  local dir="$2"
+p6df::modules::redis::profile::mod() {
 
-  p6_bootstrap "$dir"
-
-  p6_return_void
+  p6_return_words 'redis' "$"
 }
