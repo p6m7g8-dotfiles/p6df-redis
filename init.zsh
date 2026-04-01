@@ -68,5 +68,5 @@ _redis_iam_build() {
 ######################################################################
 p6df::modules::redis::profile::mod() {
 
-  p6_return_words 'redis' '$REDIS_URL'
+  p6_return_words 'redis' "$"
 }
