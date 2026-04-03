@@ -55,18 +55,7 @@ _redis_iam_build() {
   p6_return_void
 }
 
-######################################################################
-#<
-#
-# Function: words redis $REDIS_URL = p6df::modules::redis::profile::mod()
-#
-#  Returns:
-#	words - redis $REDIS_URL
-#
-#  Environment:	 REDIS_URL
-#>
-######################################################################
-p6df::modules::redis::profile::mod() {
+p6df::modules::redis::prompt::env() {
 
-  p6_return_words 'redis' "$"
+  p6_return_words "redis" '$REDIS_URL'
 }
