@@ -37,8 +37,8 @@ TODO: Add a short summary of this module.
 
 - `str token = p6df::modules::redis::aws::token::get(group_id, user_id, [region=$AWS_REGION])`
   - Args:
-    - group_id -
-    - user_id -
+    - group_id
+    - user_id
     - OPTIONAL region - [$AWS_REGION]
 
 #### p6df-redis
@@ -46,12 +46,9 @@ TODO: Add a short summary of this module.
 ##### p6df-redis/init.zsh
 
 - `p6df::modules::redis::deps()`
-- `p6df::modules::redis::external::brew()`
-- `p6df::modules::redis::init(_module, dir)`
-  - Args:
-    - _module -
-    - dir -
+- `p6df::modules::redis::external::brews()`
 - `p6df::modules::redis::langs()`
+- `words redis = p6df::modules::redis::prompt::env()`
 
 ## Hierarchy
 
@@ -60,10 +57,11 @@ TODO: Add a short summary of this module.
 ├── init.zsh
 ├── lib
 │   └── aws
+│       ├── iam.zsh
 │       └── token.sh
 └── README.md
 
-3 directories, 3 files
+3 directories, 4 files
 ```
 
 ## Author

@@ -43,18 +43,17 @@ p6df::modules::redis::langs() {
   p6_return_void
 }
 
-_redis_iam_build() {
-
-  jenv local 17
-  jenv enable-plugin maven
-  jenv rehash
-
-  mvn clean
-  mvn verify
-
-  p6_return_void
-}
-
+######################################################################
+#<
+#
+# Function: words redis = p6df::modules::redis::prompt::env()
+#
+#  Returns:
+#	words - redis
+#
+#  Environment:	 REDIS_URL
+#>
+######################################################################
 p6df::modules::redis::prompt::env() {
 
   p6_return_words "redis" '$REDIS_URL'
